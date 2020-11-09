@@ -18,16 +18,21 @@
       el: "#app",
       name: 'ImmyBot',
       repo: 'https://github.com/CBlaize/test-docs/tree/main/docs',
+      homepage: "home.md",
       loadSidebar: true,
       loadNavbar: true,
       maxLevel: 4,
       subMaxLevel: 2,
-      search: {
-        paths: 'auto',
-      },
+      mergeNavbar: true,
+      auto2top: true,
+      ssearch: 'auto', // default
+      placeholder: {
+        '/': 'Search'
+      }
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 
 </html>
